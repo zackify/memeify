@@ -1,6 +1,6 @@
-##Slackify
+##Memeify
 
-Slackify is a bot that will automatically generate memes when a user types `zackify this is, so cool`. The bot will look for a folder called `zackify` inside of your memes directory and then grab a random picture from that folder. You can have a single image inside the folder, or 100, it will randomly select one and create the meme.
+Memeify is a bot that will automatically generate memes when a user types `zackify this is, so cool`. The bot will look for a folder called `zackify` inside of your memes directory and then grab a random picture from that folder. You can have a single image inside the folder, or 100, it will randomly select one and create the meme.
 
 ##Setup
 
