@@ -6,25 +6,25 @@ Slackify is a bot that will automatically generate memes when a user types `zack
 
 Install caption and [set it up](https://github.com/jesseditson/node-caption)
 
-`npm install caption -g`
+```
+npm install caption -g
+npm install memeify -g
+memeify // will start the bot!
+```
 
-Rename config.json.example to config.json and fill in your info:
+Make a config.json file that will have the following info:
 
 ```
 {
   "botToken": "slack bot token",
   "userToken": "slack user token",
-  "directory": "./memes/" //directory to your memes
+  "directory": "./memes/" //directory to your memes, with trailing slash
 }
 
 
 ```
-The reason for generating a user token is because bot users are not aloud to upload files to slack.
+Put this in the directory that you'll be running `memeify` from. All you need to do is run `memeify` in a terminal window, it'll look for the config in the current directory and start listening!
+
+The reason for generating a user token is because bot users are not allowed to upload files to slack.
 
 The way I use this is I put the meme's folder on Dropbox and let everyone have access to it.
-
-##Running
-
-git clone this repo, then `npm install` and `npm start`. Now go into a public channel or message the bot and say `zackify hi` if you have a folder called `zackify` in your memes folder with pictures!
-
-You can put text on the top and bottom of a meme by adding a comma: `zackify this is on top, this is on bottom`

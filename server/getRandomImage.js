@@ -1,5 +1,6 @@
 var fs = require('fs')
-var directory = require('../config.json').directory
+var config = process.cwd() + '/config.json'
+var directory = require(config).directory
 
 module.exports = function(path){
   try{

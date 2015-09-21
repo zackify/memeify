@@ -1,4 +1,5 @@
-var Token = require('../config.json').userToken
+var config = process.cwd() + '/config.json'
+var Token = require(config).userToken
 var exec = require('child_process').exec;
 
 module.exports = function upload(text, channel, image){

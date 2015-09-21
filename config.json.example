@@ -1,5 +1,5 @@
 {
   "botToken": "slack bot token",
   "userToken": "slack user token",
-  "directory": "./memes/" //directory to your memes
+  "directory": "./memes/"
 }

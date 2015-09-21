@@ -1,8 +1,11 @@
 {
-  "name": "slackify",
+  "name": "memeify",
   "version": "0.0.1",
   "description": "a slack bot that create memes from your photos!",
   "main": "server/app.js",
+  "bin": {
+    "memeify": "server/app.js"
+  },
   "dependencies": {
     "caption": "^0.1.1",
     "github": "^0.2.4",
@@ -16,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zackify/slackify.git"
+    "url": "git+https://github.com/zackify/memeify.git"
   },
   "keywords": [
     "slack",
@@ -29,7 +32,7 @@
   "author": "Zach Silveira",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zackify/slackify/issues"
+    "url": "https://github.com/zackify/memeify/issues"
   },
-  "homepage": "https://github.com/zackify/slackify#readme"
+  "homepage": "https://github.com/zackify/memeify#readme"
 }
