@@ -13,6 +13,8 @@ module.exports = function upload(text, channel, image){
   exec(command, function(){
     console.log('made it', arguments[1])
 
-    exec('curl -F file=@output.jpg -F channels='+channel+' -F title="'+text+'" -F token='+Token+' https://slack.com/api/files.upload')
+    exec('curl -F file=@output.jpg -F channels='+channel+' -F title="'+text+'" -F token='+Token+' https://slack.com/api/files.upload', function(){
+      exec('rm -rf output.jpg')
+    })
   })
 }
