@@ -13,7 +13,7 @@ var HandleMessage = require('./handleMessage')
 
 slack = new Slack(Token, true, true)
 slack.on('message', HandleMessage)
-slack.on('open', () => {
+slack.on('open', function() {
   console.log('Connected and waiting!')
 })
 slack.login()
